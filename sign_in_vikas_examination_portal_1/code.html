@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Vikas Examination Portal - Student Login</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Google Fonts for Typography Hierarchy -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="styles.css">
+<script src="tailwind-config.js" id="tailwind-config"></script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex items-center justify-center p-margin"><main class="w-full flex items-center justify-center"><div class="flex flex-col w-full items-center justify-center py-6 px-4">
+<div class="w-full max-w-4xl bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row relative">
+<!-- Left Decorative Brand / Context Panel -->
+<div class="w-full md:w-5/12 bg-primary-container text-on-primary flex flex-col justify-between p-8 relative overflow-hidden">
+<!-- Subtle Ambient Glow -->
+<div class="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-secondary opacity-20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 -right-20 w-60 h-60 rounded-full bg-on-tertiary-container opacity-20 blur-2xl pointer-events-none"></div>
+<!-- Top Header Context -->
+<div class="relative z-10 flex flex-col space-y-4">
+<div class="inline-flex items-center gap-2 self-start bg-on-primary/10 px-3 py-1.5 rounded-full backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">verified</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider font-semibold">Official Assessment Portal</span>
+</div>
+<div class="space-y-3 pt-2"><div class="flex items-center gap-3"><div><h1 class="font-headline-sm text-headline-sm text-on-primary font-bold tracking-tight uppercase">VIKAS EXAMINATION PORTAL</h1><p class="font-label-sm text-label-sm text-secondary-fixed font-medium uppercase tracking-wider">Junior College Assessment System</p></div></div><div class="font-label-sm text-label-sm text-surface-tint pt-1 flex items-center gap-1.5"><span class="material-symbols-outlined text-xs">domain</span><span class="">Affiliated to State Pre-University Board</span></div></div>
+</div>
+<!-- Center Dynamic Illustration / Student Context Card -->
+<div class="relative z-10 my-8 bg-on-primary/5 rounded-xl p-5 backdrop-blur-sm space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold uppercase tracking-wide">Live Session</span>
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-code-sm text-code-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+            ACTIVE TEST RUN
+          </span>
+</div>
+<div class="space-y-1">
+<p class="font-headline-sm text-headline-sm text-on-primary font-bold">Standard XII Term Examinations</p>
+<p class="font-body-sm text-body-sm text-surface-variant">Computer Science, Mathematics &amp; Physics streams</p>
+</div>
+<div class="flex items-center gap-3 pt-2">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-lg">school</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-primary font-semibold">5,400+ Candidates</p>
+<p class="font-label-sm text-label-sm text-surface-tint">Synchronous Secure Evaluation</p>
+</div>
+</div>
+</div>
+<!-- Left Bottom Compliance Footnote -->
+<div class="relative z-10 space-y-2">
+<div class="flex items-center gap-2 text-surface-dim font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">shield_lock</span>
+<span class="">End-to-End Proctor Encrypted</span>
+</div>
+<p class="font-code-sm text-code-sm text-surface-tint">Secured by Biometric &amp; Device Identity Verification System v4.8</p>
+</div>
+</div>
+<!-- Right Login Form Area -->
+<div class="w-full md:w-7/12 p-8 md:p-10 flex flex-col justify-between bg-surface-container-lowest">
+<!-- Top Badges & Switcher -->
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6">
+<span class="inline-flex items-center gap-1.5 bg-surface-container text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm font-medium w-fit"><span class="material-symbols-outlined text-sm text-secondary">workspace_premium</span> Institutional Assessment System 2024-2025</span>
+<!-- Portal Segmented Control -->
+</div>
+<!-- Heading -->
+<div class="space-y-1 mb-6">
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight" id="portal-heading">Sign In to Vikas Examination Portal</h2>
+<p class="font-body-md text-body-md text-on-surface-variant" id="portal-subheading">Access examination modules, hall tickets, faculty evaluation, or administration dashboards with your institutional ID.</p>
+</div>
+<!-- Form Elements -->
+<form class="space-y-5" onsubmit="event.preventDefault(); triggerAuth();">
+<!-- Identity Field -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md font-semibold text-on-surface" for="identifier" id="label-identifier">Institutional ID or Official College Email</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-lg pointer-events-none">fingerprint</span>
+<input class="w-full pl-11 pr-4 py-3 bg-surface rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-colors duration-150" id="identifier" placeholder="e.g. 24JC-1082 (Student) or r.varma@vikasjc.edu.in (Staff)" required="" type="text">
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="block font-label-md text-label-md font-semibold text-on-surface" for="password">Password / Passcode</label>
+<a class="font-label-sm text-label-sm text-secondary hover:underline font-semibold flex items-center gap-1" href="#"><span class="">Reset Password</span>
+<span class="material-symbols-outlined text-xs">open_in_new</span></a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-lg pointer-events-none">lock</span>
+<input class="w-full pl-11 pr-12 py-3 bg-surface rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-colors duration-150" id="password" placeholder="Enter your account password or workstation secret" required="" type="password">
+<button class="absolute right-3 text-outline hover:text-on-surface p-1 rounded transition-colors" id="toggle-pwd-btn" onclick="togglePasswordVisibility()" title="Toggle password view" type="button">
+<span class="material-symbols-outlined text-lg" id="pwd-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember & Security Options -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-secondary bg-surface focus:ring-0 focus:ring-offset-0 cursor-pointer" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Remember my exam workstation</span>
+</label>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-sm">wifi_protected_setup</span>
+<span class="">LAN Station Active</span>
+</span>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-3.5 px-6 rounded-lg bg-primary hover:bg-on-background text-on-primary font-headline-sm text-headline-sm font-semibold shadow-md transition-all duration-150 flex items-center justify-center gap-2" id="submit-button" type="submit">
+<span class="" id="button-label">Sign In to Portal</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</form>
+<!-- Exam Alert Helper Box -->
+<div class="mt-6 p-4 rounded-xl bg-surface-container-low flex items-start gap-3 relative overflow-hidden">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex-shrink-0 flex items-center justify-center mt-0.5">
+<span class="material-symbols-outlined text-base">campaign</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Examination Notice</span>
+<span class="font-code-sm text-code-sm bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold">10:00 AM IST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mid-Term assessment sessions are currently active. Candidates must present verified College ID / Hall Pass; invigilators and evaluators must verify workstation station IDs.</p>
+</div>
+</div>
+</div>
+<!-- Institutional Footer -->
+<div class="pt-6 mt-6 bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-md bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-base">support_agent</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm font-semibold text-on-surface">Examination Helpdesk</p>
+<p class="font-code-sm text-code-sm text-on-surface-variant">ext. 4410 • helpdesk@vikasjc.edu.in</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-outline">IT Governance &amp; Examination Cell</p>
+<p class="font-label-sm text-label-sm text-secondary font-medium">All sessions recorded &amp; logged</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script></main></body></html>

@@ -1,0 +1,702 @@
+<!DOCTYPE html><html lang="en" style="width: 1280px; height: 2022px; overflow: hidden; position: relative;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><link href="styles.css" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script src="tailwind-config.js"></script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 overflow-y-auto"><div class="px-space-lg pt-space-lg pb-space-md flex items-center gap-space-sm"><img src="https://lh3.googleusercontent.com/aida/AEtjO1VPJyDCWKdMLBOfODwAIVgJJtPC7yxk_B7kWDYOIpj3cGskPzczlOkPlM7T5mJa-Mam36t4Zk1-h4iE-DRtxyQ-FtFKyzruwVPmVUxljEdu-jTEDO0ZjzFKeLT0cqyPpkd3FCCurcF1RR9vmAHUqoRxh3Hp_dGjeFC9XjgJIjG981HizLxIjqAgz__OSqKtuqM691zNtt4gEMGtM1SLPZqos1wr2Y8LALcY_I1jsrXiF5gdjO43xvqjbx0" alt="Vikas Examination Portal" class="h-9 w-auto object-contain"></div><div class="px-space-lg py-space-xs"><div class="h-px bg-surface-container-high w-full"></div></div><nav class="flex-1 px-space-md py-space-md flex flex-col gap-space-xs" data-active-classes="bg-surface-container text-on-surface font-label-md font-semibold">
+              <a href="#" class="flex items-center px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface font-label-md font-semibold transition-colors">
+                <span class="material-symbols-outlined mr-space-sm text-[20px]" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+                Dashboard
+              </a>
+              <a href="#" class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md">
+                <span class="material-symbols-outlined mr-space-sm text-[20px]">insights</span>
+                Student Performance
+              </a>
+            </nav></div><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">Dr. Rajesh K. Varma</span><span class="inline-flex items-center w-max px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px] uppercase font-semibold">Faculty (Mathematics)</span><span class="font-code-sm text-[11px] text-on-surface-variant truncate profile-email-label">rajesh.v@vikasjc.edu.in</span></div></div><a class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-surface-container-high transition-colors flex items-center justify-center" data-path="logout" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img src="https://lh3.googleusercontent.com/aida/AEtjO1V6yCWbjKAXfBbQfeVpGGwAZRTgAVGLRsXLzqy5u6gkfMAMg6L3v0wlu1Sb5h1DOHGZRdXzaB8J1g3nyzfW8TPAvA-PXxSGdU1VHnqPWuOWgtjw6V0Z12rQGgdZl_eNxYqc3UJKsFN6nDpuneCE87ahTJ3DGdGVJ-nVorziB-jtfgRGWb7nVLJ1RdebL55klx_5vDOXHYmA7jmutv4STbqJ-7oWQdAyAXfpgyh_FICq-ncHX9OMj45T6sI" alt="Vikas Portal" class="h-7 w-auto object-contain"><div class="h-4 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="font-label-md text-label-md text-on-surface">Staff Portal</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="font-body-sm text-body-sm text-on-surface-variant">Academic Faculty &amp; Section Performance</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/30 text-secondary border border-secondary/20"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-code-sm text-code-sm font-semibold tracking-wide uppercase">LAN Exam Node Active</span></div><div class="flex items-center gap-space-sm"><button class="relative p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 w-full px-space-xl bg-surface min-h-screen"><div class="flex flex-col w-full">
+ 
+<!-- Context Indicator Pill -->
+<section class="py-space-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-surface-container-high shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Currently Viewing:</span>
+<span class="font-label-md text-label-md text-on-surface">Class 12-A • Mathematics</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">tune</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span class="font-code-sm text-code-sm">Evaluation Cycle: 2024-25 • Term II Mid-Term</span>
+</div>
+</section>
+<!-- Title & Academic Subheader -->
+<header class="pb-space-lg flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Class Performance &amp; Academic Analytics</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-3xl">
+        Track section benchmarks, identify students needing remediation, and evaluate score distributions in real time.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="h-10 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">print</span>
+        Print Sheet
+      </button>
+<button class="h-10 px-4 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md transition-all shadow-sm hover:shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+        Certify Section Marks
+      </button>
+</div>
+</header>
+<!-- Global Interactive Filter Bar -->
+<section class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm mb-space-xl">
+<form class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-end" id="analyticsFilterForm" onsubmit="event.preventDefault(); applyInteractiveFilters();">
+<!-- Filter 1: Class & Section -->
+<div class="md:col-span-3 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1.5" for="filterClass">
+<span class="material-symbols-outlined text-[16px] text-secondary">school</span>
+          Class &amp; Section
+        </label>
+<div class="relative">
+<select class="w-full h-11 pl-3.5 pr-9 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all appearance-none cursor-pointer" id="filterClass">
+<option selected="" value="12-A">Class 12 - Section A (PCMB)</option>
+<option value="12-B">Class 12 - Section B (PCMC)</option>
+<option value="11-A">Class 11 - Section A (General)</option>
+<option value="EMPTY">Class 11 - Section D (No Exam Data)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Filter 2: Subject -->
+<div class="md:col-span-3 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1.5" for="filterSubject">
+<span class="material-symbols-outlined text-[16px] text-secondary">calculate</span>
+          Subject
+        </label>
+<div class="relative">
+<select class="w-full h-11 pl-3.5 pr-9 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all appearance-none cursor-pointer" id="filterSubject">
+<option selected="" value="MATH-102">Mathematics &amp; Calculus (MATH-102)</option>
+<option value="PHY-101">Physics (PHY-101)</option>
+<option value="CHEM-103">Chemistry (CHEM-103)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Filter 3: Term / Assessment -->
+<div class="md:col-span-3 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider flex items-center gap-1.5" for="filterTerm">
+<span class="material-symbols-outlined text-[16px] text-secondary">event_repeat</span>
+          Date Range / Term
+        </label>
+<div class="relative">
+<select class="w-full h-11 pl-3.5 pr-9 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all appearance-none cursor-pointer" id="filterTerm">
+<option selected="" value="TERM-2">Term II Mid-Terms (Oct 2024)</option>
+<option value="TERM-1">Term I Final Benchmark (Aug 2024)</option>
+<option value="UNIT-1">Unit Assessment 1 (Jul 2024)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Filter Actions -->
+<div class="md:col-span-3 flex items-center gap-space-sm pt-2 md:pt-0">
+<button class="flex-1 h-11 px-5 rounded-lg bg-primary text-on-primary hover:bg-surface-container-highest hover:text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-all shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[18px]">filter_alt</span>
+          Apply Filters
+        </button>
+<button class="h-11 px-3.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-colors flex items-center justify-center" onclick="resetInteractiveFilters()" title="Reset all filters" type="button">
+          Reset to All
+        </button>
+</div>
+</form>
+</section>
+<!-- Dynamic Stat Cards Row -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-xl">
+<!-- Highest Score Card -->
+<div class="relative p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-secondary-container/20 pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Highest Score</span>
+<span class="w-8 h-8 rounded-lg bg-secondary-container/50 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">emoji_events</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mt-space-sm">
+<span class="font-timer-display text-display-lg text-on-surface" id="statHighestVal">98</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ 100</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 flex flex-col gap-1 bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface truncate" id="statHighestStudent">Aarav Sharma</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Class 12-A</span>
+</div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span class="font-code-sm text-code-sm font-semibold">+4 vs last exam benchmark</span>
+</div>
+</div>
+</div>
+<!-- Lowest Score Card -->
+<div class="relative p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-error-container/20 pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Lowest Score</span>
+<span class="w-8 h-8 rounded-lg bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mt-space-sm">
+<span class="font-timer-display text-display-lg text-on-surface" id="statLowestVal">42</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ 100</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex flex-col gap-1 bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-error flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+            Needs Remediation
+          </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Threshold: 50%</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">group_remove</span>
+<span class="font-code-sm text-code-sm">3 students below 50% passing threshold</span>
+</div>
+</div>
+</div>
+<!-- Class Section Average Card -->
+<div class="relative p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-secondary-container/20 pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Class Section Average</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">equalizer</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mt-space-sm">
+<span class="font-timer-display text-display-lg text-secondary" id="statAvgVal">79.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">cohort mean</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex flex-col gap-1 bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface-variant">College Grade Avg: 74.2%</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">38 Enrolled</span>
+</div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="font-code-sm text-code-sm font-semibold">+5.2% Outperforming</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Comparative Bar Chart Section & Visual Diagnostics Bento Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Bar Chart Card (8 cols) -->
+<div class="lg:col-span-8 p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Section-wise Average Score Comparison</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mathematics Mid-Term Benchmark vs. Junior College cohort standard</p>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Current Class (12-A)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-surface-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Other Sections</span>
+</div>
+</div>
+</div>
+<!-- Visual Bar Chart Component (Pure SVG + styled responsive columns) -->
+<div class="relative w-full pt-4 pb-2">
+<!-- Benchmark Line with label -->
+<div class="absolute left-16 right-4 top-[35%] flex items-center pointer-events-none z-10">
+<div class="w-full border-t-2 border-dashed border-outline-variant/60"></div>
+<span class="absolute right-0 -top-3.5 bg-surface-container-high px-2 py-0.5 rounded text-[10px] font-code-sm text-on-surface font-semibold tracking-wide">
+              College Benchmark (70%)
+            </span>
+</div>
+<!-- SVG Chart Visual -->
+<svg aria-label="Section Average Comparison Chart" class="w-full h-64 overflow-visible" preserveAspectRatio="none" viewBox="0 0 760 250">
+<!-- Y-Axis Grid lines -->
+<line stroke="#eff4ff" stroke-width="1.5" x1="50" x2="740" y1="20" y2="20"></line>
+<text fill="#76777d" font-family="JetBrains Mono" font-size="11" text-anchor="end" x="40" y="24">100%</text>
+<line stroke="#eff4ff" stroke-width="1.5" x1="50" x2="740" y1="75" y2="75"></line>
+<text fill="#76777d" font-family="JetBrains Mono" font-size="11" text-anchor="end" x="40" y="79">75%</text>
+<line stroke="#eff4ff" stroke-width="1.5" x1="50" x2="740" y1="130" y2="130"></line>
+<text fill="#76777d" font-family="JetBrains Mono" font-size="11" text-anchor="end" x="40" y="134">50%</text>
+<line stroke="#eff4ff" stroke-width="1.5" x1="50" x2="740" y1="185" y2="185"></line>
+<text fill="#76777d" font-family="JetBrains Mono" font-size="11" text-anchor="end" x="40" y="189">25%</text>
+<line stroke="#dce9ff" stroke-width="2" x1="50" x2="740" y1="220" y2="220"></line>
+<text fill="#76777d" font-family="JetBrains Mono" font-size="11" text-anchor="end" x="40" y="224">0%</text>
+<!-- Bar 1: Section A (79.4%) -->
+<g class="transition-all duration-300 hover:opacity-90 cursor-pointer">
+<rect fill="#006a61" height="155" rx="6" width="95" x="90" y="65"></rect>
+<!-- Highlight glow -->
+<rect fill="#86f2e4" height="6" opacity="0.6" rx="3" width="89" x="93" y="68"></rect>
+<text fill="#006a61" font-family="JetBrains Mono" font-size="13" font-weight="700" text-anchor="middle" x="137" y="52">79.4%</text>
+<text fill="#0b1c30" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" x="137" y="238">Sec A (PCMB)</text>
+</g>
+<!-- Bar 2: Section B (74.8%) -->
+<g class="transition-all duration-300 hover:opacity-90 cursor-pointer">
+<rect fill="#d3e4fe" height="146" rx="6" width="95" x="260" y="74"></rect>
+<text fill="#45464d" font-family="JetBrains Mono" font-size="13" font-weight="600" text-anchor="middle" x="307" y="62">74.8%</text>
+<text fill="#45464d" font-family="Inter" font-size="12" text-anchor="middle" x="307" y="238">Sec B (PCMC)</text>
+</g>
+<!-- Bar 3: Section C (71.2%) -->
+<g class="transition-all duration-300 hover:opacity-90 cursor-pointer">
+<rect fill="#d3e4fe" height="138" rx="6" width="95" x="430" y="82"></rect>
+<text fill="#45464d" font-family="JetBrains Mono" font-size="13" font-weight="600" text-anchor="middle" x="477" y="70">71.2%</text>
+<text fill="#45464d" font-family="Inter" font-size="12" text-anchor="middle" x="477" y="238">Sec C (PCME)</text>
+</g>
+<!-- Bar 4: Section D (68.5%) -->
+<g class="transition-all duration-300 hover:opacity-90 cursor-pointer">
+<rect fill="#eff4ff" height="131" rx="6" width="95" x="600" y="89"></rect>
+<text fill="#45464d" font-family="JetBrains Mono" font-size="13" font-weight="600" text-anchor="middle" x="647" y="77">68.5%</text>
+<text fill="#45464d" font-family="Inter" font-size="12" text-anchor="middle" x="647" y="238">Sec D (Comm)</text>
+</g>
+</svg>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-[11px] font-semibold uppercase">Active Section</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Class 12-A leads 3 other parallel cohorts by +4.6% to +10.9%.</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:text-on-surface font-semibold flex items-center gap-1 transition-colors">
+          View Cross-Sectional Analysis
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Academic Insights & Remedial Summary Card (4 cols) -->
+<div class="lg:col-span-4 p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Cohort Distribution</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">donut_large</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Curriculum Mastery Breakdown</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Based on Math Mid-Term performance</p>
+<!-- Grade Segments Mini-Bar -->
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="h-3 w-full rounded-full bg-surface-container-high overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 48%;" title="High Achievers: 48%"></div>
+<div class="bg-secondary-fixed-dim h-full" style="width: 32%;" title="Consistent: 32%"></div>
+<div class="bg-primary-fixed-dim h-full" style="width: 12%;" title="Needs Focus: 12%"></div>
+<div class="bg-error h-full" style="width: 8%;" title="Remedial: 8%"></div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Top Performers (&gt;85%)
+              </span>
+<span class="font-timer-display text-headline-sm text-on-surface mt-1">18 Students</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+                Consistent (70-85%)
+              </span>
+<span class="font-timer-display text-headline-sm text-on-surface mt-1">12 Students</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span>
+                Borderline (50-70%)
+              </span>
+<span class="font-timer-display text-headline-sm text-on-surface mt-1">5 Students</span>
+</div>
+<div class="p-2.5 rounded-lg bg-error-container/40 flex flex-col">
+<span class="font-body-sm text-body-sm text-error flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                Remedial (&lt;50%)
+              </span>
+<span class="font-timer-display text-headline-sm text-error mt-1">3 Students</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md rounded-lg bg-surface-container-low p-space-sm flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">assignment_late</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface truncate">Remedial Session Scheduled</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Thu, 3:30 PM • Room 204</span>
+</div>
+<button class="h-8 px-2.5 rounded bg-surface-container-highest hover:bg-surface-container text-on-surface font-label-sm text-[11px] font-semibold transition-colors">
+          Manage
+        </button>
+</div>
+</div>
+</section>
+<!-- Detailed Student Performance Table Section -->
+<section class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm mb-space-xl">
+<!-- Table Header Toolbar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">Detailed Student Performance Table</h2>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-code-sm text-code-sm font-semibold" id="studentCountBadge">
+          Showing 38 Students in Class 12-A
+        </span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Live Search Box -->
+<div class="relative min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3.5 top-3 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-11 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" id="studentSearchInput" oninput="handleStudentSearch(this.value)" placeholder="Search by student name or roll number..." type="text">
+</div>
+<!-- Export Dropdown / Action -->
+<div class="relative">
+<button class="h-11 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-2 transition-colors" onclick="toggleExportMenu()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+            Export CSV / PDF
+            <span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</button>
+<div class="hidden absolute right-0 top-12 w-48 rounded-lg bg-surface-container-lowest shadow-xl p-1 z-30" id="exportMenu">
+<a class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface font-body-sm text-body-sm" href="#" onclick="alert('Exporting Class 12-A Performance Report as CSV...'); return false;">
+<span class="material-symbols-outlined text-[18px] text-secondary">table_view</span>
+              Export as CSV (.xlsx)
+            </a>
+<a class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface font-body-sm text-body-sm" href="#" onclick="alert('Generating Certified PDF Roster with Dean Stamp...'); return false;">
+<span class="material-symbols-outlined text-[18px] text-error">picture_as_pdf</span>
+              Export Signed PDF
+            </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left" id="studentPerformanceTable">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-4 rounded-l-lg">Roll Number</th>
+<th class="py-3.5 px-4">Student Name</th>
+<th class="py-3.5 px-4">Section</th>
+<th class="py-3.5 px-4 text-right">Latest Score</th>
+<th class="py-3.5 px-4">Score Trend vs Previous</th>
+<th class="py-3.5 px-4">Category</th>
+<th class="py-3.5 px-4 rounded-r-lg text-right">Action</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface divide-y-0" id="studentTableBody">
+<!-- Student Row 1 -->
+<tr class="student-record hover:bg-surface-container-low/60 transition-colors" data-name="Aarav Sharma" data-roll="24JC-1082" data-section="Class 12-A">
+<td class="py-3 px-4 font-code-sm text-code-sm text-on-surface-variant font-medium">24JC-1082</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container font-label-md flex items-center justify-center font-bold">AS</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface student-name truncate">Aarav Sharma</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant truncate">aarav.s24@vikasjc.edu.in</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Class 12-A</span>
+</td>
+<td class="py-3 px-4 text-right">
+<div class="inline-flex items-center gap-2">
+<span class="font-timer-display text-label-md font-bold text-on-surface">94 / 100</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-bold">A+</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="inline-flex items-center gap-1.5 text-secondary font-code-sm text-code-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span class="">▲ +6% vs Unit 1</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-[11px] font-semibold uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Top 5%
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 text-secondary hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors" onclick="openExamAnswerSheet('24JC-1082', 'Aarav Sharma', 94)">
+<span class="">View Detailed Answer Sheet</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Student Row 2 -->
+<tr class="student-record hover:bg-surface-container-low/60 transition-colors" data-name="Priya Patel" data-roll="24JC-1094" data-section="Class 12-A">
+<td class="py-3 px-4 font-code-sm text-code-sm text-on-surface-variant font-medium">24JC-1094</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md flex items-center justify-center font-bold">PP</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface student-name truncate">Priya Patel</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant truncate">priya.p24@vikasjc.edu.in</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Class 12-A</span>
+</td>
+<td class="py-3 px-4 text-right">
+<div class="inline-flex items-center gap-2">
+<span class="font-timer-display text-label-md font-bold text-on-surface">88 / 100</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-bold">A</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="inline-flex items-center gap-1.5 text-secondary font-code-sm text-code-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span class="">▲ +3% vs Unit 1</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-[11px] font-semibold uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Consistent
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 text-secondary hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors" onclick="openExamAnswerSheet('24JC-1094', 'Priya Patel', 88)">
+<span class="">View Detailed Answer Sheet</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Student Row 3 -->
+<tr class="student-record hover:bg-surface-container-low/60 transition-colors" data-name="Rohan Mehta" data-roll="24JC-1102" data-section="Class 12-A">
+<td class="py-3 px-4 font-code-sm text-code-sm text-on-surface-variant font-medium">24JC-1102</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface font-label-md flex items-center justify-center font-bold">RM</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface student-name truncate">Rohan Mehta</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant truncate">rohan.m24@vikasjc.edu.in</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Class 12-A</span>
+</td>
+<td class="py-3 px-4 text-right">
+<div class="inline-flex items-center gap-2">
+<span class="font-timer-display text-label-md font-bold text-on-surface">76 / 100</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-[11px] font-bold">B+</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="inline-flex items-center gap-1.5 text-error font-code-sm text-code-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+<span class="">▼ -5% vs Unit 1</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-[11px] font-semibold uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Needs Focus
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 text-secondary hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors" onclick="openExamAnswerSheet('24JC-1102', 'Rohan Mehta', 76)">
+<span class="">View Detailed Answer Sheet</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Student Row 4 -->
+<tr class="student-record hover:bg-surface-container-low/60 transition-colors" data-name="Kavita Nair" data-roll="24JC-1115" data-section="Class 12-A">
+<td class="py-3 px-4 font-code-sm text-code-sm text-on-surface-variant font-medium">24JC-1115</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container font-label-md flex items-center justify-center font-bold">KN</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface student-name truncate">Kavita Nair</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant truncate">kavita.n24@vikasjc.edu.in</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Class 12-A</span>
+</td>
+<td class="py-3 px-4 text-right">
+<div class="inline-flex items-center gap-2">
+<span class="font-timer-display text-label-md font-bold text-on-surface">91 / 100</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-bold">A+</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="inline-flex items-center gap-1.5 text-secondary font-code-sm text-code-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span class="">▲ +2% vs Unit 1</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-[11px] font-semibold uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                High Achiever
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 text-secondary hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors" onclick="openExamAnswerSheet('24JC-1115', 'Kavita Nair', 91)">
+<span class="">View Detailed Answer Sheet</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Student Row 5 -->
+<tr class="student-record hover:bg-surface-container-low/60 transition-colors" data-name="Vikram Singh" data-roll="24JC-1130" data-section="Class 12-A">
+<td class="py-3 px-4 font-code-sm text-code-sm text-on-surface-variant font-medium">24JC-1130</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-error-container text-error font-label-md flex items-center justify-center font-bold">VS</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface student-name truncate">Vikram Singh</span>
+<span class="font-code-sm text-[11px] text-on-surface-variant truncate">vikram.s24@vikasjc.edu.in</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface">Class 12-A</span>
+</td>
+<td class="py-3 px-4 text-right">
+<div class="inline-flex items-center gap-2">
+<span class="font-timer-display text-label-md font-bold text-error">42 / 100</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[11px] font-bold">C</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="inline-flex items-center gap-1.5 text-error font-code-sm text-code-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+<span class="">▼ -8% vs Unit 1</span>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-error-container text-error font-label-sm text-[11px] font-semibold uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Remedial Queue
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="inline-flex items-center gap-1 text-secondary hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors" onclick="openExamAnswerSheet('24JC-1130', 'Vikram Singh', 42)">
+<span class="">View Detailed Answer Sheet</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty State Demonstrator Card (Shown dynamically when no matches found) -->
+<div class="hidden py-space-2xl px-space-lg flex flex-col items-center justify-center text-center" id="emptySearchCard">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-[32px]">manage_search</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">No results available for this filter combination</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-1">
+        We couldn't find any candidate or evaluation data matching your query in Class 12-A. Check spelling or clear your criteria.
+      </p>
+<div class="mt-space-lg flex items-center gap-space-sm">
+<button class="h-10 px-4 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-surface-container-highest hover:text-on-surface transition-colors" onclick="resetInteractiveFilters()">
+          Reset Filter &amp; Search
+        </button>
+<button class="h-10 px-4 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" onclick="demoEmptyViewTrigger()">
+          Dismiss Empty View
+        </button>
+</div>
+</div>
+<!-- Pagination & Audit Footer -->
+<div class="pt-space-lg mt-space-md flex flex-wrap items-center justify-between gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-code-sm text-code-sm">Marks synchronized with Central Examination Server • Hash: JC-882B</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm">
+<button class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" title="Previous page">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-3 py-1 rounded bg-secondary text-on-secondary font-semibold">1</span>
+<span class="px-3 py-1 text-on-surface">2</span>
+<button class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" title="Next page">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Slide-over / Modal for "View Detailed Answer Sheet" -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="answerSheetModal">
+<div class="w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden flex flex-col max-h-[90vh]">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modalStudentName">Student Answer Script</h3>
+<span class="font-code-sm text-code-sm text-on-surface-variant" id="modalStudentMeta">Roll: 24JC-1082 • Class 12-A</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeExamAnswerSheet()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Question Script Review) -->
+<div class="p-space-lg overflow-y-auto flex flex-col gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Subject &amp; Examination</span>
+<div class="font-label-md text-label-md text-on-surface">Mathematics &amp; Calculus (MATH-102) • Mid-Term Oct 2024</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Awarded Mark</span>
+<div class="font-timer-display text-headline-md text-secondary" id="modalScoreDisplay">94 / 100</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wide text-xs">Section A: Multiple Choice Questions</h4>
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-sm flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Q1. Evaluation of Limit as x tends to 0 of (sin 3x / x)</span>
+<span class="font-body-sm text-body-sm text-secondary mt-1">Student Answer: [B] 3 (Correct)</span>
+</div>
+<span class="font-code-sm text-code-sm font-bold text-secondary">+2 / 2</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-sm flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Q2. Derivative of ln(cos x) with respect to x</span>
+<span class="font-body-sm text-body-sm text-secondary mt-1">Student Answer: [C] -tan(x) (Correct)</span>
+</div>
+<span class="font-code-sm text-code-sm font-bold text-secondary">+2 / 2</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-sm flex items-start justify-between" id="sampleMistakeQ">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Q3. Definite Integral of e^(2x) from 0 to 1</span>
+<span class="font-body-sm text-body-sm text-error mt-1">Student Answer: [A] (e^2)/2 (Incorrect: Missing -0.5 constant)</span>
+</div>
+<span class="font-code-sm text-code-sm font-bold text-error">0 / 2</span>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Faculty Invigilator / Evaluator Remarks</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Good geometric understanding. Practice algebraic bounds simplification during integration by parts to prevent arithmetic losses.
+          </p>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="h-10 px-4 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" onclick="closeExamAnswerSheet()">
+          Close Preview
+        </button>
+<button class="h-10 px-4 rounded-lg bg-primary text-on-primary font-label-md text-label-md transition-colors flex items-center gap-2" onclick="alert('Downloading Certified Answer Script PDF...');">
+<span class="material-symbols-outlined text-[18px]">download</span>
+          Download Digital Script
+        </button>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</div></main></div>
+
+</body></html>
