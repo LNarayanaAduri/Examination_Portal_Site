@@ -1,13 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Proctor broadcast ticker (from styles.css) */
 @keyframes proctorTicker {
   0% { transform: translate3d(0, 0, 0); }
   100% { transform: translate3d(-50%, 0, 0); }
 }
+
 .animate-proctor-marquee {
   display: inline-flex;
   white-space: nowrap;
   will-change: transform;
   animation: proctorTicker 28s linear infinite;
 }
+
 .proctor-marquee-container:hover .animate-proctor-marquee {
   animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-proctor-marquee {
+    animation-play-state: paused;
+  }
 }
