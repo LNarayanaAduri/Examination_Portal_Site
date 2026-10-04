@@ -1,0 +1,7 @@
+// These are temporary Google-hosted URLs from the exported design.
+// Download the images into src/assets/ and import them here for a stable build.
+export const LOGO_URL =
+  'https://lh3.googleusercontent.com/aida/AEtjO1VPJyDCWKdMLBOfODwAIVgJJtPC7yxk_B7kWDYOIpj3cGskPzczlOkPlM7T5mJa-Mam36t4Zk1-h4iE-DRtxyQ-FtFKyzruwVPmVUxljEdu-jTEDO0ZjzFKeLT0cqyPpkd3FCCurcF1RR9vmAHUqoRxh3Hp_dGjeFC9XjgJIjG981HizLxIjqAgz__OSqKtuqM691zNtt4gEMGtM1SLPZqos1wr2Y8LALcY_I1jsrXiF5gdjO43xvqjbx0';
+
+export const AVATAR_URL =
+  'https://lh3.googleusercontent.com/aida/AEtjO1UAkPhjS94qWS4ogDi51ibAgwP98o2WU3a51ZZEy3wHFAUB5ksqVngGxf6Vrw7DtCqAwGnNPxjrXlg_w-Le71INfhkA8PKx14AFWs7GVOI9532MxsoiYwh-Zg6tXpENY11VYECunGEHMtxxsXpi-qGz8xopWUiIISVVCJGMqIzKh7_5_KBirQdpXzb9y6oT3WwTfWkMpEsmJi1-stX9_LOZ7KCDqnelE4wwSgq59BBR-w6VZDBKxBYiXQ';

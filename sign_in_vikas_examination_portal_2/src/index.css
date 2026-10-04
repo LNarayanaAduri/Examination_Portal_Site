@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Proctor broadcast ticker (from styles.css) */
+@keyframes proctorTicker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-proctor-marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+  animation: proctorTicker 28s linear infinite;
+}
+
+.proctor-marquee-container:hover .animate-proctor-marquee {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-proctor-marquee {
+    animation-play-state: paused;
+  }
+}
+
+/* Urgent advisory bar (replaces the deprecated <marquee>) */
+@keyframes advisoryScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.advisory-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.advisory-marquee > span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: advisoryScroll 40s linear infinite;
+}
+
+.advisory-marquee:hover > span {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .advisory-marquee {
+    white-space: normal;
+  }
+  .advisory-marquee > span {
+    padding-left: 0;
+    animation: none;
+  }
+}
